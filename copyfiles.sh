@@ -14,7 +14,7 @@ sudo pip install AWSIoTPythonSDK
 
 cd /home/ec2-user/environment
 mkdir LAB1
-for Item in cloudcamera.py cloudms.py cloudscreen.py deleteIotThings.sh provisionIotThings.sh PutDDBlambda.gql;
+for Item in customizefiles.sh cloudcamera.py cloudms.py cloudscreen.py deleteIotThings.sh provisionIotThings.sh PutDDBlambda.gql;
   do
     FILE_NAME=$Item
     # Copy File here
