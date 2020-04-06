@@ -7,6 +7,18 @@ sudo yum -y install jq
 sudo pip install AWSIoTPythonSDK
 
 
+
+# update CLIs in user mode
+curl -O https://bootstrap.pypa.io/get-pip.py
+python get-pip.py --user
+cp ~/.bash_profile toto
+echo "export PATH=~/.local/bin:\$PATH" >> ~/.bash_profile
+export PATH=~/.local/bin:$PATH
+pip3 install awscli --upgrade --user
+echo "AWS Version :"
+aws --version
+#pip3 install --upgrade --user awscli
+
 #!/bin/bash
 # This script  copies all necessary files for Immersion day user into their CLoud9 instance
 
