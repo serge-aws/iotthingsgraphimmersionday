@@ -35,7 +35,7 @@ for Item in customizefiles.sh cloudcamera.py cloudms.py cloudscreen.py deleteIot
 
 mkdir LAB2
 
-for Item in deleteIotThings.sh provisionIotThings.sh ACTION_activity.gql ACTION_finished.gql Button.py Camera.py EVENT_activity.gql EVENT_finished.gql LAMBDA_activity.gql LAMBDA_finished.gql LED.py labFlow.gql readGaugeLambda.py;
+for Item in deleteIotThings.sh provisionIotThings.sh Button.py Camera.py   LED.py readGaugeLambda.py;
 
   do
     FILE_NAME=$Item
