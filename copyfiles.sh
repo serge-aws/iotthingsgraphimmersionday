@@ -43,4 +43,17 @@ for Item in deleteIotThings.sh provisionIotThings.sh Button.py Camera.py   LED.p
     aws s3 cp s3://iot-thingsgraph-immersionday-files/LAB2/$FILE_NAME /home/ec2-user/environment/LAB2
   done
 
+#
+# now load all required devices
+#
+
+cd /home/ec2-user/environment/LAB1
+chmod +x *.sh
+./provisionIotThings.sh
+
+cd /home/ec2-user/environment/LAB2
+chmod +x *.sh
+./provisionIotThings.sh  
+cd /home/ec2-user/environment/init_script
+
 
